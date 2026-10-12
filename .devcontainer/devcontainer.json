@@ -1,0 +1,20 @@
+{
+  "name": "SessionLoggerX Codespace",
+  "image": "mcr.microsoft.com/devcontainers/java:1-21",
+  "features": {
+    "ghcr.io/devcontainers/features/gradle:1": {}
+  },
+  "postCreateCommand": "gradle --version || true",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "redhat.java",
+        "richardwillis.vscode-gradle",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "forwardPorts": [],
+  "remoteUser": "vscode"
+}
